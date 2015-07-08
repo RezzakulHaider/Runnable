@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="static/bootstrap.min.css"
+          rel="stylesheet">
+     <link href="static/style.css"
+          rel="stylesheet">
+    <script type="text/javascript" src="static/jquery.min.js"></script>  
+	<script type="text/javascript" src="static/jsonobj.min.js"></script>
+	<script type="text/javascript" src="static/table.min.js"></script>
+	<script type="text/javascript" src="static/bootstrap.min.js"></script>
+     
+  </head>
+ <body onLoad="getdata()">
+ <table id="excelDataTable" class="table table-bordered table-hover " border="2">
+ </table>
+    <input type="button" name="Download" class="download" value="Download"/>
+    <input type="button" name="Delete" class="delete"  value="Delete"/> 
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">BlueBox File System</h3>
+        <!--<input type="button" onclick="getdata()" value="Load Table" /> -->
+      </div>
+      <hr/>
+      <div>    
+      <form action="upload" method="post" enctype="multipart/form-data">
+        Browse the file to upload :<input type="file" name="infile"><br /><br />
+        Enter the Folder Name:<input type="text" name="infolder"><br /><br />
+        <input type="submit" value="Upload"><br /><br />
+      </form>
+      </div>
+    </div>
+  </body>
+</html>
+ 
